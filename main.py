@@ -208,11 +208,11 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
     print(check_cookie(yuki))
     return redirect("/word")
 
-@app.get("/certification")
-def check_password(response: Response, request: Request, q:str):
+@app.post("/certification")
+def check_password(response: Response, q:str):
     if q == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
-    return redirect("/")
+    return '/'
     
 @app.get('/watch', response_class=HTMLResponse)
 def video(v:str,response: Response,request: Request,yuki: Union[str] = Cookie(None),proxy: Union[str] = Cookie(None)):
