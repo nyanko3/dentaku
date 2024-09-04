@@ -50,13 +50,7 @@
             }
             
             function check(){
-                if(getElm('check').value == '罪刑法定主義'){
-                    getElm('result').textContent = '正解';
-                    doc.cookie = 'yuki=True; path=/;';
-                    location.replace('/')
-                }else{
-                    getElm('result').textContent = '不正解';
-                }
+                location.replace(`/certification?q=${getElm('check').value}`)
                 return
             }
         </script>
