@@ -209,8 +209,7 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
     return redirect("/word")
 
 @app.get("/certification", response_class=HTMLResponse)
-def check_password(response: Response, request: Request, q:str, yuki: Union[str] = Cookie(None),proxy: Union[str] = Cookie(None)):
-    if check_cookie
+def check_password(response: Response, request: Request, q:str):
     if q == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
     return redirect("/")
