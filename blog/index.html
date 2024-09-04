@@ -50,8 +50,12 @@
             }
             
             function check(){
-                location.replace(`/certification?q=${getElm('check').value}`)
-                return
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/certification");
+                xhr.onload = function () {
+                    location.replace(xhr.responseText)
+                };
+                xhr.send();
             }
         </script>
     </head>
