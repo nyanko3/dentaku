@@ -43,10 +43,8 @@
             
         </style>
         <script>
-            var doc = document;
-            
             function getElm(id){
-                return doc.getElementById(id)
+                return document.getElementById(id)
             }
             
             function check(){
@@ -55,7 +53,7 @@
                 xhr.onload = function () {
                     location.replace(xhr.responseText)
                 };
-                xhr.send();
+                xhr.send(`q=${getElm('check').value}`);
             }
         </script>
     </head>
