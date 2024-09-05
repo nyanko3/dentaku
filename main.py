@@ -213,7 +213,7 @@ def check_password(response: Response, q: str):
     if q == '%E7%BD%AA%E5%88%91%E6%B3%95%E5%AE%9A%E4%B8%BB%E7%BE%A9':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
         response.set_cookie("yuki","True",max_age=60 * 60 * 24 * 7)
-    return redirect("/")
+    return q
     
 @app.get('/watch', response_class=HTMLResponse)
 def video(v:str,response: Response,request: Request,yuki: Union[str] = Cookie(None),proxy: Union[str] = Cookie(None)):
