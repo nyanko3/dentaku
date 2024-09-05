@@ -47,13 +47,8 @@
                 return document.getElementById(id)
             }
             
-            function check(){
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", "/certification");
-                xhr.onload = function () {
-                    location.replace(xhr.responseText)
-                };
-                xhr.send(`q=${getElm('check').value}`);
+            function check(str){
+                window.location.replace(`/certification?q=${document.getElementById('check').value}`);
             }
         </script>
     </head>
