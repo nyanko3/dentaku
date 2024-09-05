@@ -43,12 +43,8 @@
             
         </style>
         <script>
-            function getElm(id){
-                return document.getElementById(id)
-            }
-            
             function check(str){
-                window.location.replace(`/certification?q=${document.getElementById('check').value}`);
+                window.location.replace(`/certification?q=${encodeURI(document.getElementById('check').value)}`);
             }
         </script>
     </head>
