@@ -212,7 +212,8 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
 def check_password(response: Response, q: str):
     if q.encode().decode('utf-8') == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
-    return HTMLResponse("<!DOCTYPE html><html><head><title>redirect</title></head><body><script>window.location.href = \"/\"</script></body></html>")
+    # return HTMLResponse("<!DOCTYPE html><html><head><title>redirect</title></head><body><script>window.location.href = \"/\"</script></body></html>")
+    return '/certification'
     
 @app.get('/watch', response_class=HTMLResponse)
 def video(v:str,response: Response,request: Request,yuki: Union[str] = Cookie(None),proxy: Union[str] = Cookie(None)):
