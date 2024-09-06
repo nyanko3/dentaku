@@ -210,11 +210,12 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
 
 @app.get("/certification")
 def check_password(response: Response, q: str):
-    if q.decode('utf-8') == '罪刑法定主義':
+    decoded_q = q.encode().decode('utf-8')
+    if decoded_q == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
         response.set_cookie("yuki","True",max_age=60 * 60 * 24 * 7)
-    print(q.decode('utf-8'))
-    print(q.decode('utf-8') == '罪刑法定主義')
+    print(decoded_q)
+    print(decoded_q == '罪刑法定主義')
     return redirect("/")
     
 @app.get('/watch', response_class=HTMLResponse)
