@@ -208,11 +208,12 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
     print(check_cookie(yuki))
     return redirect("/word")
 
-@app.get("/certification", response_class=HTMLResponse)
+@app.post("/certification")
 def check_password(response: Response, q: str):
     if q.encode().decode('utf-8') == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
-    return HTMLResponse("<!DOCTYPE html><html><head><title>redirect</title></head><body><script>setTimeout(() => {window.location.href = '/'}, 500);</script></body></html>")
+    # return HTMLResponse("<!DOCTYPE html><html><head><title>redirect</title></head><body><script>setTimeout(() => {window.location.href = '/'}, 500);</script></body></html>")
+    return redirect("/")
     
     
     
