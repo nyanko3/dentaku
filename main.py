@@ -211,6 +211,9 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
 
 @app.post("/certification")
 def check_password(response: Response, q: certification_param):
+    print(q)
+    print(type(q))
+    print(q.password)
     if q.password.encode().decode('utf-8') == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
         return '/'
