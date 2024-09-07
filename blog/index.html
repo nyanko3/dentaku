@@ -44,9 +44,9 @@
         </style>
         <script>
         function check(){
-            param = {"password": document.getElementById('check').value}
+            const param = {"password": document.getElementById('check').value}
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", `/certification`);
+            xhr.open("POST", '/certification');
             xhr.onload = function () {
                 console.log(xhr.responseText)
             };
