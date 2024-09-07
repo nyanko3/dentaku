@@ -49,7 +49,7 @@
             xhr.onload = function () {
                 console.log(xhr.responseText)
             };
-            xhr.send(`q=${document.getElementById('check').value}`);
+            xhr.send(`{"q": ${document.getElementById('check').value}}`);
         }
         </script>
     </head>
