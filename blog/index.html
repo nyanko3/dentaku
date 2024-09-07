@@ -44,12 +44,13 @@
         </style>
         <script>
         function check(){
+            param = {"password": document.getElementById('check').value}
             var xhr = new XMLHttpRequest();
             xhr.open("POST", `/certification`);
             xhr.onload = function () {
                 console.log(xhr.responseText)
             };
-            xhr.send(`"q"=${{"password": document.getElementById('check').value}}`);
+            xhr.send(`"q"=${param}`);
         }
         </script>
     </head>
