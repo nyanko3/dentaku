@@ -185,7 +185,7 @@ from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Union
-
+from pydantic import BaseModel
 
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 app.mount("/css", StaticFiles(directory="./css"), name="static")
@@ -195,7 +195,8 @@ app.add_middleware(GZipMiddleware, minimum_size=1000)
 from fastapi.templating import Jinja2Templates
 template = Jinja2Templates(directory='templates').TemplateResponse
 
-
+class certification_param(BaseModel):
+    password: str
 
 
 
@@ -209,11 +210,12 @@ def home(response: Response,request: Request,yuki: Union[str] = Cookie(None)):
     return redirect("/word")
 
 @app.post("/certification")
-def check_password(response: Response, q: str):
-    if q.encode().decode('utf-8') == '罪刑法定主義':
+def check_password(response: Response, q: certification_param):
+    if q.password().encode().decode('utf-8') == '罪刑法定主義':
         response.set_cookie(key="yuki", value="True",max_age=7*24*60*60)
+        return '/'
     # return HTMLResponse("<!DOCTYPE html><html><head><title>redirect</title></head><body><script>setTimeout(() => {window.location.href = '/'}, 500);</script></body></html>")
-    return redirect("/")
+    return '/word'
     
     
     
