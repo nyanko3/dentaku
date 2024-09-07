@@ -43,9 +43,14 @@
             
         </style>
         <script>
-            function check(str){
-                window.location.replace(`/certification?q=${encodeURI(document.getElementById('check').value)}`);
-            }
+        function check(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/certification");
+            xhr.onload = function () {
+                console.log('fetched')
+            };
+            xhr.send(`q=${document.getElementById('check').value}`);
+        }
         </script>
     </head>
     <body>
