@@ -45,11 +45,11 @@
         <script>
         function check(){
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "/certification");
+            xhr.open("POST", `/certification");
             xhr.onload = function () {
                 console.log(xhr.responseText)
             };
-            xhr.send(`{"q": ${document.getElementById('check').value}}`);
+            xhr.send(`{"password": ${document.getElementById('check').value}}`);
         }
         </script>
     </head>
