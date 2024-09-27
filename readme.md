@@ -1,1 +1,1 @@
-<a href="render.com">render</a>
+<a href="/blog/index.html/">render</a>
