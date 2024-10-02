@@ -155,7 +155,7 @@ def get_replies(videoid, key):
 def get_level(word):
     for i1 in range(1, 13):
         with open(f'Level{i1}.txt', 'r', encoding='UTF-8', newline='\n') as f:
-            if word in [i2.rstrip("\r\n") for i2 in f.readlines()]:
+            if nyanko_a in [i2.rstrip("\r\n") for i2 in f.readlines()]:
                 return i1
     return 0
 
