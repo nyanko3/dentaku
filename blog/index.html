@@ -1,1 +1,1226 @@
 <!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-style-type" content="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+ 
+  
+<meta name="description" content="WEB電卓とは？PC/iPad/iPhone/Android などのブラウザで動く無料の電卓アプリです。計算履歴や計算式が確認できるメモリー機能付き計算機となります。パソコンはもちろんタブレットやスマートフォンでも利用可能です。">
+ 
+ 
+  <link rel="shortcut icon" href="https://static.awsnw.com/webdentaku/v2/ico/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://static.awsnw.com/webdentaku/v2/ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://static.awsnw.com/webdentaku/v2/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://static.awsnw.com/webdentaku/v2/ico/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#666666">
+  <meta name="msapplication-TileColor" content="#666666">
+  <meta name="theme-color" content="#666666">
+ 
+  
+  <style type="text/css">@charset "utf-8";:root{--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:744px;--breakpoint-lg:992px;--breakpoint-xl:1200px}*,::after,::before{box-sizing:border-box}[tabindex="-1"]:focus{outline:0!important}[hidden]{display:none!important}.container{width:100%;padding-right:10px;padding-left:10px;margin-right:auto;margin-left:auto}@media (min-width:375px){.container{padding-right:10px;padding-left:10px}}@media (min-width:576px){.container{max-width:540px;padding-right:10px;padding-left:10px}}@media (min-width:744px){.container{max-width:744px;padding-right:6px;padding-left:6px}}@media (min-width:992px){.container{max-width:960px;padding-right:10px;padding-left:10px}}@media (min-width:1200px){.container{max-width:1140px;padding-right:10px;padding-left:10px}}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-10px;margin-left:-10px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col,.no-gutters>[class*=col-]{padding-right:0;padding-left:0}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;min-height:1px}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-sm-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-sm-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-sm-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-sm-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-sm-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-sm-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-sm-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-sm-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}@media (min-width:744px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-md-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-md-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-md-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-md-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-md-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-md-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}@media (min-width:992px){.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-lg-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-lg-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-lg-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-lg-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-lg-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}@media (min-width:1200px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-xl-auto{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}.col-xl-1{-webkit-box-flex:0;-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}.col-xl-2{-webkit-box-flex:0;-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}.col-xl-3{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-4{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-xl-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-7{-webkit-box-flex:0;-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-xl-8{-webkit-box-flex:0;-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-9{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-xl-10{-webkit-box-flex:0;-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-xl-11{-webkit-box-flex:0;-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}.col-xl-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}</style>
+  <style type="text/css">@charset "utf-8";
+ 
+* {
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family:
+    "Hiragino Kaku Gothic Pro",
+    "メイリオ",
+    "Meiryo",
+    "Lucida Grande",
+    "Arial",
+    "MS P Gothic",
+    sans-serif;
+  background-color: #FFF;
+  color: #333;
+  touch-action: manipulation;
+}
+ 
+ol, ul {
+  list-style: none;
+}
+ 
+h2, h3 {
+  margin: 24px auto;
+}
+ 
+h2 {
+  font-size: 2.0em;
+}
+ 
+h3 {
+  font-size: 2.0em;
+}
+ 
+hr {
+  border-top: 1px solid #ddd;
+  margin: 24px auto;
+}
+ 
+/* ANCHOR */
+ 
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+ 
+/* INPUT */
+ 
+input[type="button"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+ 
+/* ROUTE */
+ 
+.route {
+  padding: 24px 0;
+  list-style: none;
+  font-size: 0.9em;
+}
+ 
+.route li {
+  display: inline-block;
+}
+ 
+.route li+li:before {
+  content: '»';
+  padding: 0px 8px;
+}
+ 
+/* HEADER */
+ 
+header {
+  height: 32px;
+  background-color: #333;
+  color: #FFF;
+  padding: 4px 8px;
+  overflow: hidden;
+}
+@media screen and (min-width: 744px) {
+  header {
+    height: 46px;
+  }
+}
+ 
+header a,
+header a:hover,
+header a:visited {
+  color: #FFF;
+}
+ 
+header .site-title {
+  display: inline-block;
+  font-weight: bold;
+  background: url('https://static.awsnw.com/webdentaku/img/logo_white_64x64.png') no-repeat left center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.0;
+  text-align: center;
+}
+@media screen and (min-width: 744px) {
+  header .site-title {
+    font-size: 34px;
+    background-size: 32px 32px;
+    padding-left: 34px;
+    line-height: 1.0;
+    text-align: left;
+  }
+}
+ 
+header .site-sub-title-small-view {
+  font-size: 12px;
+}
+@media screen and (min-width: 744px) {
+  header .site-sub-title-small-view {
+    display: none;
+  }
+}
+ 
+header .site-sub-title {
+  font-size: 0.75em;
+  text-align: left;
+  display: none;
+}
+@media screen and (min-width: 744px) {
+  header .site-sub-title {
+    display: inline-block;
+  }
+}
+ 
+.site-title a,
+.site-title a:hover,
+.site-title a:visited {
+  color: #FFF;
+}
+ 
+/* CONTAINER-BASE */
+ 
+.container-base {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 576px) {
+  .container-base {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .container-base {
+    width: 744px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-base {
+    width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-base {
+    width: 1100px;
+  }
+}
+ 
+/* FOOTER */
+ 
+footer {
+  margin-top: 4px;
+  background-color: #333;
+  color: #FFF;
+  padding: 12px;
+  margin: 0 auto;
+  text-align: left;
+}
+ 
+footer > .container,
+footer > .container .row {
+  margin: 0 auto;
+}
+ 
+footer .site-title {
+  font-size: 32px;
+  font-weight: bold;
+  background: url('https://static.awsnw.com/webdentaku/img/logo_white_64x64.png') no-repeat left center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  padding-left: 32px;
+  line-height: 1.0;
+}
+ 
+footer .site-url {
+  color: #AAA;
+  margin: 0 0 24px 0;
+}
+ 
+footer a,
+footer a:hover,
+footer a:visited {
+  text-decoration: none;
+  color: #FFF;
+}
+ 
+footer .site-url a,
+footer .site-url a:hover,
+footer .site-url a:visited {
+  text-decoration: none;
+  color: #AAA;
+}
+ 
+footer .links {
+  font-size: 0.9em;
+  margin: 0 0 24px 0;
+}
+ 
+footer .qrcode {
+  width: 120px;
+  height: 120px;
+}
+ 
+footer .copyright {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 0.8em;
+  color: #DDD;
+}
+ 
+/* LIST-GROUP */
+ 
+.list-group-head {
+  border-top-left-radius: 12px; 
+  border-top-right-radius: 12px;
+  border-top: solid 1px #DC143C;
+  background-color: #DC143C;
+  font-weight: bold;
+  color: #FFF;
+}
+ 
+.list-group-item {
+  border-left: solid 1px #DDD;
+  border-right: solid 1px #DDD;
+  border-bottom: solid 1px #DDD;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 24px;
+}
+ 
+.list-group-head,
+.list-group-item {
+  padding: 24px;
+}
+ 
+.list-group-head a,
+.list-group-head a:hover,
+.list-group-head a:visited {
+  color: #FFF;
+}
+ 
+/* WARN */
+ 
+.warn {
+  color: #666;
+  font-size: 0.8em;
+  margin: 0px 0px 24px 0px;
+}
+ 
+.warn a,
+.warn a:visited,
+.warn a:hover {
+  text-decoration: underline;
+  color: #666;
+}
+ 
+/* TEXT */
+ 
+.text {
+  margin: 0px 0px 24px 0px;
+}
+ 
+.text p {
+  margin: 24px 0px;
+}
+ 
+.text a,
+.text a:visited,
+.text a:hover {
+  text-decoration: underline;
+}
+ 
+/* TEXT-POSITION */
+ 
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+ 
+.font-bold {
+  font-weight: bold !important;
+}
+ 
+/* Alternate view size */
+ 
+.small-view-hidden {
+  display: none;
+}
+.large-view-hidden {
+  display: block;
+}
+@media screen and (min-width: 744px) {
+  .small-view-hidden {
+    display: block;
+  }
+  .large-view-hidden {
+    display: none;
+  }
+}
+ 
+.site-descr {
+  background-color: #EEE;
+  padding: 16px;
+  margin: 12px;
+  border-radius: 12px;
+}
+@media screen and (min-width: 744px) {
+  .site-descr {
+    padding: 0;
+    margin: 8px auto;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+ 
+.site-descr p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+}
+ 
+.site-descr > p > a,
+.site-descr > p > a:hover,
+.site-descr > p > a:visited {
+  color: #0090cd;
+}
+ 
+/* SNSBOX */
+ 
+.snsbox-base {
+  margin: 2px 0 0 0;
+}
+ 
+.snsbox {
+  display: inline-block;;
+  width: 18%;
+  max-width: 80px;
+  font-weight: bold;
+  font-size: 0.9em;
+  border-radius: 4px;
+  margin: 4px 0 0 0;
+  padding: 4px 8px;
+  text-align: center;
+  transition: .3s;
+}
+ 
+.snsbox:hover {
+  opacity: 0.8;
+}
+ 
+.snsbox,
+.snsbox:visited,
+.snsbox:hover {
+  text-decoration: none;
+  color: #fff;
+}
+ 
+.sb-line {
+  background-color: #1DCD00;
+  border: solid 1px #1DCD00;
+}
+ 
+.sb-twitter {
+  background-color: #55ACEE;
+  border: solid 1px #55ACEE;
+}
+ 
+.sb-twitter-x {
+  background-color: #111111;
+  border: solid 1px #111111;
+}
+ 
+.sb-facebook {
+  background-color: #315096;
+  border: solid 1px #315096;
+}
+ 
+.sb-hatena {
+  background-color: #008FDE;
+  border: solid 1px #008FDE;
+}
+ 
+.sb-pocket {
+  background-color: #EE4056;
+  border: solid 1px #EE4056;
+  background-image: url("https://static.awsnw.com/snsbox/icon/pocket.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: center;
+}
+ 
+.sb-amazon {
+  width: 100%;
+  background-color: #fff;
+  border: solid 1px #FF9900;
+  color: #000 !important;
+}
+@media screen and (min-width: 992px) {
+  .sb-amazon {
+    max-width: 410px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sb-amazon {
+    max-width: 560px;
+  }
+}
+ 
+.sb-rakuten {
+  width: 100%;
+  background-color: #fff;
+  border: solid 1px #BF0000;
+  color: #BF0000 !important;
+}
+@media screen and (min-width: 992px) {
+  .sb-rakuten {
+    max-width: 410px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sb-rakuten {
+    max-width: 560px;
+  }
+}
+ 
+/* IMG-INSTALL */
+ 
+.img-install {
+  width: 240px;
+}
+ 
+/* TABLE */
+ 
+.table-decor {
+  background-color: #fff;
+  font-size: 0.9em;
+  margin: 24px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ 
+.table-decor th,
+.table-decor td {
+  border: solid 1px #aaa;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.6;
+  padding: 4px 8px;
+}
+ 
+.table-decor th {
+  font-weight: bold;
+}
+</style>
+  <style type="text/css">@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  src: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
+url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
+}
+ 
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+/* https://icons.getbootstrap.com/ */
+ 
+.bi-chevron-right::before { content: "\f285"; }
+.bi-envelope::before { content: "\f32f"; }
+.bi-search::before { content: "\f52a"; }
+.bi-house-door-fill::before { content: "\f422"; }
+.bi-house-door::before { content: "\f423"; }
+.bi-house-fill::before { content: "\f424"; }
+.bi-house::before { content: "\f425"; }
+.bi-calculator-fill::before { content: "\f1df"; }
+.bi-calculator::before { content: "\f1e0"; }
+.bi-twitter::before { content: "\f5ef"; }
+.bi-twitter-x::before { content: "\f8db"; }
+.bi-facebook::before { content: "\f344"; }
+.bi-trash-fill::before { content: "\f5dd"; }
+.bi-trash::before { content: "\f5de"; }
+.bi-clipboard-check::before { content: "\f28b"; }
+.bi-clipboard-minus::before { content: "\f28d"; }
+.bi-clipboard-plus::before { content: "\f28e"; }
+.bi-clipboard::before { content: "\f290"; }
+.bi-clock-fill::before { content: "\f291"; }
+.bi-clock-history::before { content: "\f292"; }
+.bi-clock::before { content: "\f293"; }
+.bi-arrows-collapse::before { content: "\f14b"; }
+.bi-arrows-expand::before { content: "\f14c"; }
+.bi-box-arrow-up::before { content: "\f1c6"; }
+.bi-three-dots-vertical::before { content: "\f5d3"; }
+.bi-download::before { content: "\f30a"; }
+.bi-filetype-csv::before { content: "\f743"; }
+.bi-filetype-txt::before { content: "\f766"; }</style>
+  
+ 
+  
+<style type="text/css">@charset "UTF-8";
+ 
+/* DENTAKU-BASE */
+ 
+.dentaku-base {
+  width: 100%;
+  padding: 0px 24px 12px 24px;
+  margin: 4px auto 4px auto;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media screen and (min-width: 744px) {
+  .dentaku-base {
+    width: 728px;
+    padding: 12px 24px 0px 24px;
+    border-radius: 8px;
+    background-color: #eee;
+  }
+}
+@media screen and (min-width: 992px) {
+  .dentaku-base {
+    width: 100%;
+  }
+}
+ 
+/* HISTORY-MENU */
+ 
+.history-menu {
+  min-height: 1.2em;
+  font-size: 1.2em;
+  text-align: right;
+}
+@media screen and (min-width: 744px) {
+  .history-menu {
+    margin-bottom: 4px;
+    text-align: left;
+  }
+}
+ 
+.history-menu span {
+  padding: 2px;
+  cursor: pointer;
+}
+ 
+/*
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+history-menu display settings is changing with JS
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+#history-menu-expantion,
+#history-menu-reduction {
+  /* For default */
+  display: none;
+}
+ 
+/* HISTORY */
+ 
+.history {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 8px;
+  border: solid 1px #ddd;
+  /* white-space: normal; */
+  line-height: 1.0;
+  white-space: nowrap;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  margin-bottom: 4px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 744px) {
+  .history {
+    height: 400px;
+    padding: 12px;
+    margin-bottom: 0;
+  }
+}
+ 
+.history-icon,
+.history-remove,
+.history-answer,
+.history-formula {
+  display: inline-block;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 2px;
+  font-size: 0.8em;
+  vertical-align: middle;
+  line-height: normal;
+  line-height: 1;
+  cursor: pointer;
+}
+@media screen and (min-width: 744px) {
+  .history-icon,
+  .history-remove,
+  .history-answer,
+  .history-formula {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .history-icon,
+  .history-remove,
+  .history-answer,
+  .history-formula {
+    font-size: 0.9em;
+  }
+}
+ 
+.history-remove {
+  color: #f08080;
+  border: solid 1px #f08080;
+}
+ 
+.history-icon {
+}
+ 
+.history-icon > i {
+  font-size: 0.9em;
+  vertical-align: middle;
+}
+ 
+/* DENTAKU */
+ 
+.dentaku {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  border: solid 1px #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #eee;
+}
+@media screen and (min-width: 744px) {
+  .dentaku {
+    width: 300px;
+    border: solid 0 #ddd;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+ 
+.dentaku table {
+  width: 100%;
+  table-layout: fixed;
+}
+ 
+.dentaku table tr td {
+  vertical-align: middle;
+}
+ 
+.dentaku input.btn {
+  width: 100%;
+  height: 48px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 2px 0px 0px 0px;
+}
+@media screen and (min-width: 744px) {
+  .dentaku input.btn {
+    height: 70px;
+    font-size: 30px;
+  }
+}
+ 
+.dentaku input.btn-num {
+  background-color: #dcdcdc;
+  border: solid 1px #cbcbcb;
+  color: #333;
+}
+ 
+.dentaku input.btn-ope {
+  background-color: #fe9a2e;
+  border: solid 1px #ed891d;
+  color: #fff;
+}
+ 
+.dentaku input.btn-ope-eq {
+  background-color: #ff4400;
+  border: solid 1px #ee3300;
+  color: #fff;
+}
+ 
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 2.0em; /* Default size */
+  padding: 0px 12px;
+  text-align: right;
+  background-color: #888;
+  border: solid 1px #888;
+  color: #fff;
+  display: table-cell;
+  vertical-align: bottom;
+  border-radius: 8px;
+  line-height: 1.1;
+}
+ 
+#notification {
+  width: 98%;
+  height: 48px;
+  margin: 12px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: solid 1px #ddd;;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1.0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 3s ease-in-out;
+}
+ 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+ 
+/* FONT-FAMILY */
+ 
+.display,
+.history {
+  font-family:
+    "Hiragino Kaku Gothic Pro",
+    "メイリオ",
+    "Meiryo",
+    "Lucida Grande",
+    "Arial",
+    "MS P Gothic",
+    "Menlo",
+    "Monaco",
+    sans-serif,
+    monospace;
+}</style>
+ 
+ 
+  
+<title>WEB電卓ドットコム</title>
+ 
+ 
+  
+  <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7M4FTC9TEY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'G-7M4FTC9TEY');
+</script>
+  <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+  
+ 
+  
+ 
+</head>
+<body oncontextmenu="return false;">
+ 
+  <header>
+  <div class="container">
+    <h1 class="site-title"><a href="https://www.webdentaku.com">WEB電卓</a></h1>
+    <span class="site-sub-title-small-view"><a href="https://www.webdentaku.com">www.webdentaku.com</a></span>
+    <div class="site-sub-title">
+      <p><a href="https://www.webdentaku.com">www.webdentaku.com</a></p>
+      <p>計算式/履歴が見えるメモリー電卓アプリ</p>
+    </div>
+  </div>
+</header>
+  
+ 
+<style type="text/css">
+.ads1-320x100 {
+  display: none;
+}
+.ads1-728x90 {
+  display: none;
+}
+@media screen and (min-width: 744px) {
+  .ads1-320x100 {
+    display: none;
+  }
+  .ads1-728x90 {
+    display: block;
+    width: 728px;
+    height: 90px;
+    margin: 4px auto 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ads1-320x100 {
+    display: none;
+  }
+  .ads1-728x90 {
+    display: block;
+    width: 728px;
+    height: 90px;
+    margin: 8px auto 4px auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+</style>
+ 
+ 
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+<!-- WEBDENTAKU_DISPLAY_320x100 -->
+<ins class="adsbygoogle ads1-320x100" data-ad-client="ca-pub-1636119113290423" data-ad-slot="4546491651" data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+<!-- WEBDENTAKU_DISPLAY_728x90_1 -->
+<ins class="adsbygoogle ads1-728x90" data-ad-client="ca-pub-1636119113290423" data-ad-slot="2048336736" data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+ 
+ 
+  <div class="container-base">
+  
+    <main>
+      
+      
+      <article>
+      
+<div id="notification" style="display: none;"></div>
+<div class="dentaku-base">
+ 
+  <div class="row">
+ 
+    <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-8">
+      <div class="history-menu">
+ 
+  <span><a href="javascript:void(0)" onclick="downloadTXT(this);"><i class="bi-filetype-txt"></i></a></span>
+  <span><a href="javascript:void(0)" onclick="downloadCSV(this);"><i class="bi-filetype-csv"></i></a></span>
+  <span onclick="copyToClipboardForAllHistory();"><i class="bi-clipboard-plus"></i></span>
+  <span onclick="clearHistory();"><i class="bi-trash"></i></span>
+ 
+  <span id="history-menu-expantion" onclick="expansionHistory();" style="display: none;"><i class="bi-arrows-expand"></i></span>
+  <span id="history-menu-reduction" onclick="reductionHistory();" style="display: none;"><i class="bi-arrows-collapse"></i></span>
+ 
+</div>
+<div id="history" class="history"></div>
+    </div>
+ 
+    <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4">
+      <div class="dentaku">
+ 
+  <table>
+ 
+    <tbody>
+ 
+      <tr>
+        <td colspan="4" class="display" id="display" style="font-size: 2em;">0</td>
+      </tr>
+ 
+      <tr>
+        <td><input class="btn btn-ope" type="button" value="AC" onclick="allClear();"></td>
+        <td><input class="btn btn-ope" type="button" value="±" onclick="addPlusMinus();"></td>
+        <td><input class="btn btn-ope" type="button" value="%" onclick="addPercent();"></td>
+        <td><input class="btn btn-ope" type="button" value="÷" onclick="addOpe(' / ');"></td>
+      </tr>
+ 
+      <tr>
+        <td><input class="btn btn-num" type="button" value="7" onclick="addNum('7');"></td>
+        <td><input class="btn btn-num" type="button" value="8" onclick="addNum('8');"></td>
+        <td><input class="btn btn-num" type="button" value="9" onclick="addNum('9');"></td>
+        <td><input class="btn btn-ope" type="button" value="×" onclick="addOpe(' * ');"></td>
+      </tr>
+ 
+      <tr>
+        <td><input class="btn btn-num" type="button" value="4" onclick="addNum('4');"></td>
+        <td><input class="btn btn-num" type="button" value="5" onclick="addNum('5');"></td>
+        <td><input class="btn btn-num" type="button" value="6" onclick="addNum('6');"></td>
+        <td><input class="btn btn-ope" type="button" value="–" onclick="addOpe(' - ');"></td>
+      </tr>
+ 
+      <tr>
+        <td><input class="btn btn-num" type="button" value="1" onclick="addNum('1');"></td>
+        <td><input class="btn btn-num" type="button" value="2" onclick="addNum('2');"></td>
+        <td><input class="btn btn-num" type="button" value="3" onclick="addNum('3');"></td>
+        <td><input class="btn btn-ope" type="button" value="+" onclick="addOpe(' + ');"></td>
+      </tr>
+ 
+      <tr>
+        <td><input class="btn btn-num" type="button" value="0" onclick="addNum('0');"></td>
+        <td><input class="btn btn-num" type="button" value="." onclick="addDot();"></td>
+        <td><input class="btn btn-ope" type="button" value="C" onclick="charClear();"></td>
+        <td><input class="btn btn-ope-eq" type="button" value="=" onclick="calc();"></td>
+      </tr>
+ 
+    </tbody>
+ 
+  </table>
+ 
+</div><!-- dentaku -->
+    </div>
+        
+  </div>
+ 
+  <div class="small-view-hidden site-descr">
+    <p>WEB電卓とは？PC/iPad/iPhone/Android などのブラウザで動く無料の電卓アプリです。計算履歴や計算式が確認できるメモリー機能付き計算機となります。パソコンはもちろんタブレットやスマートフォンでも利用可能です。</p>
+    
+    <div class="snsbox-base">
+ 
+  <a class="snsbox sb-line" target="_blank" rel="nofollow" href="https://social-plugins.line.me/lineit/share?url=https://www.webdentaku.com">LINE</a>
+ 
+  <a class="snsbox sb-twitter-x" target="_blank" rel="nofollow" href="https://twitter.com/share?url=https://www.webdentaku.com"><i class="bi-twitter-x"></i></a>
+ 
+  <a class="snsbox sb-facebook" target="_blank" rel="nofollow" href="http://www.facebook.com/share.php?u=https://www.webdentaku.com"><i class="bi-facebook"></i></a>
+ 
+  <a class="snsbox sb-hatena" target="_blank" rel="nofollow" href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://www.webdentaku.com&amp;title=WEB電卓ドットコム">B!</a>
+ 
+  <a class="snsbox sb-pocket" target="_blank" rel="nofollow" href="http://getpocket.com/edit?url=https://www.webdentaku.com&amp;title=WEB電卓ドットコム">&nbsp;</a>
+ 
+  
+ 
+  
+ 
+</div><!-- snsbox-base -->
+  </div>
+ 
+</div>
+ 
+ 
+ 
+<style type="text/css">
+.ads2-300x250 {
+  display: none;
+}
+@media screen and (min-width: 320px) and (min-height: 620px) {
+  .ads2-300x250 {
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin: 4px auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 375px) {
+  .ads2-300x250 {
+    display: block;
+    width: 300px;
+    height: 250px;
+    margin: 4px auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 744px) {
+  .ads2-300x250 {
+    display: none;
+  }
+}
+</style>
+ 
+ 
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+<!-- WEBDENTAKU_DISPLAY_300x250 -->
+<ins class="adsbygoogle ads2-300x250" data-ad-client="ca-pub-1636119113290423" data-ad-slot="7544152098" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+ 
+ 
+ 
+<div class="large-view-hidden site-descr">
+  <p>WEB電卓とは？PC/iPad/iPhone/Android などのブラウザで動く無料の電卓アプリです。計算履歴や計算式が確認できるメモリー機能付き計算機となります。パソコンはもちろんタブレットやスマートフォンでも利用可能です。</p>
+  
+  <div class="snsbox-base">
+ 
+  <a class="snsbox sb-line" target="_blank" rel="nofollow" href="https://social-plugins.line.me/lineit/share?url=https://www.webdentaku.com">LINE</a>
+ 
+  <a class="snsbox sb-twitter-x" target="_blank" rel="nofollow" href="https://twitter.com/share?url=https://www.webdentaku.com"><i class="bi-twitter-x"></i></a>
+ 
+  <a class="snsbox sb-facebook" target="_blank" rel="nofollow" href="http://www.facebook.com/share.php?u=https://www.webdentaku.com"><i class="bi-facebook"></i></a>
+ 
+  <a class="snsbox sb-hatena" target="_blank" rel="nofollow" href="http://b.hatena.ne.jp/add?mode=confirm&amp;url=https://www.webdentaku.com&amp;title=WEB電卓ドットコム">B!</a>
+ 
+  <a class="snsbox sb-pocket" target="_blank" rel="nofollow" href="http://getpocket.com/edit?url=https://www.webdentaku.com&amp;title=WEB電卓ドットコム">&nbsp;</a>
+ 
+  
+ 
+  
+ 
+</div><!-- snsbox-base -->
+</div>
+ 
+ 
+ 
+<script defer="" src="https://static.awsnw.com/webdentaku/v2/js/dentaku-20240423.min.js"></script>
+ 
+ 
+ 
+ 
+      </article>
+    </main>
+  
+  </div>
+  <footer>
+ 
+  <div class="container">
+ 
+    <div class="row">
+  
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+ 
+        <div class="row">
+ 
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="site-title"><a href="https://www.webdentaku.com">WEB電卓</a></p>
+            <p class="site-url"><a href="https://www.webdentaku.com">www.webdentaku.com</a></p>
+          </div>
+ 
+          <div class="col-7 col-sm-7 col-md-7 col-lg-6 col-xl-8">
+            <ul class="links">
+              <li><i class="bi-chevron-right"></i> <a href="/">HOME</a></li>
+              <li><i class="bi-chevron-right"></i> <a href="/about">WEB電卓とは？</a></li>
+              <li><i class="bi-chevron-right"></i> <a href="/install">インストール</a></li>
+              <li><i class="bi-chevron-right"></i> <a href="/privacy">プライバシーポリシー</a></li>
+              <li><i class="bi-chevron-right"></i> <a href="/disclaimer">免責事項</a></li>
+              <li><i class="bi-chevron-right"></i> <a href="/contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+ 
+          <div class="col-5 col-sm-5 col-md-5 col-lg-6 col-xl-4">
+            <img class="qrcode" src="https://static.awsnw.com/webdentaku/v2/img/qrcode_www.webdentaku.com.png">
+          </div>
+ 
+        </div>
+ 
+      </div>
+ 
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-9">
+        
+ 
+<style type="text/css">
+.ads3-300x250,
+.ads3-336x280,
+.ads3-728x90 {
+  display: none;
+}
+@media screen and (min-width: 744px) and (min-height: 840px) {
+  .ads3-336x280 {
+    display: block;
+    width: 336px;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .ads3-300x250,
+  .ads3-728x90 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ads3-300x250,
+  .ads3-336x280,
+  .ads3-728x90 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (min-height: 900px) {
+  .ads3-300x250,
+  .ads3-336x280 {
+    display: none;
+  }
+  .ads3-728x90 {
+    display: block;
+    width: 728px;
+    height: 90px;
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+</style>
+ 
+ 
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+<!-- WEBDENTAKU_DISPLAY_300x250 -->
+<ins class="adsbygoogle ads3-300x250" data-ad-client="ca-pub-1636119113290423" data-ad-slot="7544152098" data-ad-format="rectangle" data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+<!-- WEBDENTAKU_DISPLAY_336x280 -->
+<ins class="adsbygoogle ads3-336x280" data-ad-client="ca-pub-1636119113290423" data-ad-slot="4455008228" data-ad-format="rectangle" data-full-width-responsive="false"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1636119113290423" crossorigin="anonymous"></script>
+<!-- WEBDENTAKU_DISPLAY_728x90_3 -->
+<ins class="adsbygoogle ads3-728x90" data-ad-client="ca-pub-1636119113290423" data-ad-slot="3333498242" data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+ 
+ 
+      </div>
+ 
+    </div>
+ 
+    <div class="copyright">
+      <p>© 2016-<span id="copyright-now-year">2024</span> WEB電卓ドットコム</p>
+    </div>
+ 
+  </div>
+ 
+</footer>
+ 
+<script type="text/javascript">
+function getNowYear() {
+  const now = new Date();
+  return now.getFullYear();
+}
+function updateCopyrightNowYear(elemId) {
+  const elem = document.getElementById(elemId);
+  elem.textContent = getNowYear();
+}
+updateCopyrightNowYear('copyright-now-year');
+</script>
+  <div id="burger-menu"><nav class="burger-menu-nav"><div class="inner"><ul><li><a href="/">HOME</a></li><li><a href="/about">WEB電卓とは？</a></li><li><a href="/install">インストール</a></li><li><a href="/contact">お問い合わせ</a></li><li><a href="/disclaimer">免責事項</a></li><li><a href="/privacy">プライバシーポリシー</a></li></ul></div></nav><div id="burger-menu-toggle-btn" class="burger-menu-toggle-btn"><span></span><span></span><span></span></div><div id="burger-menu-mask"></div></div>
+ 
+ 
+<style type="text/css">.burger-menu-nav{display:block;position:fixed;top:0;bottom:0;background-color:#666;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;transition:all .5s;z-index:2;opacity:0}.open .burger-menu-nav{left:0;opacity:1}.burger-menu-nav .inner{padding:4px}.burger-menu-nav .inner ul{list-style:none;margin:0;padding:0}.burger-menu-nav .inner ul li{position:relative;margin:0;border-bottom:1px solid #ddd}.burger-menu-nav .inner ul li a{display:block;color:#fff;font-size:14px;padding:1em;text-decoration:none;transition-duration:.2s}.burger-menu-nav .inner ul li a:hover{background-color:#ddd;color:#333}.burger-menu-nav{left:-15pc;width:15pc}@media screen and (min-width:744px){.burger-menu-nav{left:-300px;width:300px}}.burger-menu-toggle-btn{display:block;position:absolute;top:5px;right:1pc;width:30px;height:30px;transition:all .5s;cursor:pointer;z-index:2}@media screen and (min-width:744px){.burger-menu-toggle-btn{display:none}}.burger-menu-toggle-btn span{display:block;position:absolute;left:0;width:30px;height:2px;background-color:#ddd;border-radius:4px;transition:all .5s}.burger-menu-toggle-btn span:nth-child(1){top:4px}.burger-menu-toggle-btn span:nth-child(2){top:10px}.burger-menu-toggle-btn span:nth-child(3){top:1pc}.open .burger-menu-toggle-btn span{background-color:#fff}.open .burger-menu-toggle-btn span:nth-child(1){-webkit-transform:translateY(6px) rotate(-315deg);transform:translateY(6px) rotate(-315deg)}.open .burger-menu-toggle-btn span:nth-child(2){opacity:0}.open .burger-menu-toggle-btn span:nth-child(3){-webkit-transform:translateY(-6px) rotate(315deg);transform:translateY(-6px) rotate(315deg)}#burger-menu-mask{display:none;transition:all .5s}.open #burger-menu-mask{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:.8;z-index:1;cursor:pointer}</style>
+<script type="text/javascript">function createMenuNav(e){var n=document.createElement("nav");n.className="burger-menu-nav";var a=document.createElement("div");a.className="inner",n.appendChild(a);var t=document.createElement("ul");a.appendChild(t);for(let n=0;n<e.length;n++){var r=e[n].title,c=e[n].path,l=document.createElement("li");t.appendChild(l);var d=document.createElement("a");d.href=c,d.textContent=r,l.appendChild(d)}return n}function createToggleBtn(e){var n=document.createElement("div");n.id=e,n.className=e;var a=document.createElement("span");n.appendChild(a);a=document.createElement("span");n.appendChild(a);a=document.createElement("span");return n.appendChild(a),n}function createMask(e){var n=document.createElement("div");return n.id=e,n}function burgerMenu(e,n){var a=document.getElementById(e);if(a){var t=createMenuNav(n);a.appendChild(t);var r=createToggleBtn("burger-menu-toggle-btn");a.appendChild(r);var c=createMask("burger-menu-mask");a.appendChild(c);r.onclick=function(){"open"==a.className?a.className="":a.className="open"},c.onclick=function(){a.className=""}}}</script>
+ 
+ 
+<script type="text/javascript">
+document.body.onload = burgerMenu("burger-menu", [
+  {title: "HOME", path: "/"},
+  {title: "WEB電卓とは？", path: "/about"},
+  {title: "インストール", path: "/install"},
+  {title: "お問い合わせ", path: "/contact"},
+  {title: "免責事項", path: "/disclaimer"},
+  {title: "プライバシーポリシー", path: "/privacy"}
+]);
+</script>
+</body>
+</html>
