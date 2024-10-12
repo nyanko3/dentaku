@@ -21,7 +21,12 @@
         <a href="https://www.bing.com/?cc=jp">bingへ</a><br>
         <a href="https://duckduckgo.com/">duckduckgoへ</a><br>
         <a href="https://www.ecosia.org/">ecosiaへ</a><br>
-        <a href="https://www.croxy.haihu.ipv64.net">croxy</a><br>
+        <button onclick="cookie()">cookieを削除</button>
+        <script>
+            function cokkie() {
+                document.cookie = "yuki=false; path=/";
+            }
+        </script>
         <div id="search-widget" class="pure-g h-box">
             
             <div id="logo" class="pure-u-1">
