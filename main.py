@@ -11,7 +11,7 @@ import ast
 
 max_api_wait_time = 3
 max_time = 10
-apis = [r"https://inv.nadeko.net/",r"https://y.com.sb/",r"https://youtube.privacyplz.org/"]
+apis = [r"https://inv.nadeko.net/",r"https://yt.yoc.ovh/",r"https://invidious.jing.rocks/"]
 url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instance.txt').text.rstrip()
 version = "1.0"
 
