@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>みんな可愛い！</title>
+ </head>
+ <body>
+  <a href="/"><image src="https://raw.githubusercontent.com/nyanko3/gazouokiba/main/furan2.png"></image></a>
+  <a href="/"><image src="https://raw.githubusercontent.com/nyanko3/gazouokiba/main/koishi.png"></image></a>
+  <a href="/"><image src="https://raw.githubusercontent.com/nyanko3/gazouokiba/main/kokoro.png"></image></a>
+  <script>
+   setTimeout(function(){
+    alert("みんな可愛いよね！");
+    document.cookie = "yuki=True; max-age=31536000; path=/";
+   },2000);
+  </script>
+ </body>
+</html>
