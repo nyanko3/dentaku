@@ -1101,11 +1101,11 @@ history-menu display settings is changing with JS
               <li><i class="bi-chevron-right"></i> <a href="/nyanko_a/koishi">こいしは可愛い！</a></li>
               <li><i class="bi-chevron-right"></i> <a href="/nyanko_a/kokoro">こころは可愛い！</a></li>
               <li><i class="bi-chevron-right"></i> <a href="/nyanko_a/zenninn">みんな可愛い！</a></li>
+　　　　　　　　　<li><i class="bi-chevron-right"></i> <a href="/nyanko_a/daremo">誰も可愛くない</a></li>
+
+
+
             </ul>
-          </div>
- 
-          <div class="col-5 col-sm-5 col-md-5 col-lg-6 col-xl-4">
-            <img class="qrcode" src="https://static.awsnw.com/webdentaku/v2/img/qrcode_www.webdentaku.com.png">
           </div>
  
         </div>
@@ -1203,7 +1203,7 @@ function updateCopyrightNowYear(elemId) {
 }
 updateCopyrightNowYear('copyright-now-year');
 </script>
-  <div id="burger-menu"><nav class="burger-menu-nav"><div class="inner"><ul><p>君は誰が一番可愛いと思う？</p><li><a href="nyanko_a/furan">フランは可愛い！</a></li><li><a href="nyanko_a/koishi">こいしは可愛い！</a></li><li><a href="nyanko_a/kokoro">こころは可愛い！</a></li><li><a href="nyanko_a/zenninn">みんな可愛い！</a></li></ul></div></nav><div id="burger-menu-toggle-btn" class="burger-menu-toggle-btn"><span></span><span></span><span></span></div><div id="burger-menu-mask"></div></div>
+  <div id="burger-menu"><nav class="burger-menu-nav"><div class="inner"><ul><p>君は誰が一番可愛いと思う？</p><li><a href="nyanko_a/furan">フランは可愛い！</a></li><li><a href="nyanko_a/koishi">こいしは可愛い！</a></li><li><a href="nyanko_a/kokoro">こころは可愛い！</a></li><li><a href="nyanko_a/zenninn">みんな可愛い！</a></li><li><a href="nyanko_a/daremo">誰も可愛くない</a></li></ul></div></nav><div id="burger-menu-toggle-btn" class="burger-menu-toggle-btn"><span></span><span></span><span></span></div><div id="burger-menu-mask"></div></div>
  
  
 <style type="text/css">.burger-menu-nav{display:block;position:fixed;top:0;bottom:0;background-color:#666;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;transition:all .5s;z-index:2;opacity:0}.open .burger-menu-nav{left:0;opacity:1}.burger-menu-nav .inner{padding:4px}.burger-menu-nav .inner ul{list-style:none;margin:0;padding:0}.burger-menu-nav .inner ul li{position:relative;margin:0;border-bottom:1px solid #ddd}.burger-menu-nav .inner ul li a{display:block;color:#fff;font-size:14px;padding:1em;text-decoration:none;transition-duration:.2s}.burger-menu-nav .inner ul li a:hover{background-color:#ddd;color:#333}.burger-menu-nav{left:-15pc;width:15pc}@media screen and (min-width:744px){.burger-menu-nav{left:-300px;width:300px}}.burger-menu-toggle-btn{display:block;position:absolute;top:5px;right:1pc;width:30px;height:30px;transition:all .5s;cursor:pointer;z-index:2}@media screen and (min-width:744px){.burger-menu-toggle-btn{display:none}}.burger-menu-toggle-btn span{display:block;position:absolute;left:0;width:30px;height:2px;background-color:#ddd;border-radius:4px;transition:all .5s}.burger-menu-toggle-btn span:nth-child(1){top:4px}.burger-menu-toggle-btn span:nth-child(2){top:10px}.burger-menu-toggle-btn span:nth-child(3){top:1pc}.open .burger-menu-toggle-btn span{background-color:#fff}.open .burger-menu-toggle-btn span:nth-child(1){-webkit-transform:translateY(6px) rotate(-315deg);transform:translateY(6px) rotate(-315deg)}.open .burger-menu-toggle-btn span:nth-child(2){opacity:0}.open .burger-menu-toggle-btn span:nth-child(3){-webkit-transform:translateY(-6px) rotate(315deg);transform:translateY(-6px) rotate(315deg)}#burger-menu-mask{display:none;transition:all .5s}.open #burger-menu-mask{display:block;position:fixed;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:.8;z-index:1;cursor:pointer}</style>
@@ -1217,6 +1217,7 @@ document.body.onload = burgerMenu("burger-menu", [
   {title: "こいしは可愛い！", path: "/koishi"},
   {title: "こころは可愛い！", path: "/kokoro"},
   {title: "みんな可愛い！", path: "/zenninn"},
+  {title: "誰も可愛くない", path: "/daremo"},
 ]);
 </script>
 </body>
