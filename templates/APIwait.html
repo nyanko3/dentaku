@@ -4,9 +4,16 @@
 <title>待機中</title>
 </head>
 <body>
-暇だね〜
+暇だね〜<br>
+  暇だから枠置いとくね<br>
+    <input type="text" id="waku">
+    <input type="button" onclick="nemu()" value="確認">
   <script>
-    setTimeout(function(){location.reload();},10000);
+      function nemu() {
+          var pass = document.getElementById('waku').value;
+        location.href = "/"+pass;
+    };
+    setTimeout(function(){location.reload();},1000);
   </script>
 </body>
 </html>
